@@ -28,7 +28,7 @@ var getImages = () => {
   for(file of files) {
     let location = path.join("files", file);
     var stat = fs.statSync(location);
-    if(stat && stat.isFile() && [".jpg", ".png", ".gif", ".jpeg"].indexOf(path.extname(location) != -1)) {
+    if(stat && stat.isFile() && [".jpg", ".png", ".gif", ".jpeg"].indexOf(path.extname(location)) != -1) {
       result.push("/static/" + file);
     }
   }
