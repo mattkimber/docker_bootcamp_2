@@ -1,0 +1,14 @@
+html
+  head
+    title= title
+  body
+    h1= header
+    div
+      form(method='post', enctype='multipart/form-data')
+        input(type='file', name='fileupload', accept='image/png, image/jpeg')
+        input(type='submit', name='fileuploadbutton', value='Upload Photo')
+    div
+      for image in images
+        img(src=image, height=300)
+
+      

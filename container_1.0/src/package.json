@@ -1,0 +1,16 @@
+{
+  "name": "photo_uploader",
+  "version": "0.0.1",
+  "description": "Simple photo uploader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Kimber",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "express": "4.16.2",
+    "pug": "2.0.3",
+    "multer": "1.3.1"
+  }
+}
